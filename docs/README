@@ -1,0 +1,44 @@
+## Additional Documentation
+
+Below is a set of clarifications and usage notes to supplement the existing documentation:
+
+1. **Project Organization**  
+   - Each **package** under `file_structure_tool/` represents a logical group of functionality (models, services, tools, utils).
+   - The `reports/` directory holds scripts that generate comprehensive file reports from the in-memory or serialized file structure.
+   - The `docs/` directory contains documentation files, such as `report_of_files.md`.
+
+2. **Setup and Installation**  
+   - Ensure you have Python 3.8+ installed.
+   - Run `pip install -r requirements.txt` (if a `requirements.txt` is provided) to install dependencies.
+   - Confirm the environment variable `DATABASE_URL` is set only if you need external DB integrations.
+
+3. **Usage Highlights**  
+   - **`main.py`**: Demonstrates how to initialize the file structure and perform sample operations (adding/removing directories/files).
+   - **`generate_reports.py`**: Extracts and prints a full listing of files and (if possible) their contents.
+   - **`json_crud.py`**: Handles reading/writing JSON data from/to the `json_files/` directory.
+
+4. **Common Commands**  
+   1. **Initialize or Update the Structure**:  
+      ```bash
+      python -m file_structure_tool.main
+      ```
+   2. **Generate a Full Report**:  
+      ```bash
+      python -m file_structure_tool.reports.generate_reports
+      ```
+      - This creates or updates `full_report.md` in the current directory.
+   3. **Change Logging Verbosity**:  
+      - Set the environment variable `FILE_STRUCTURE_LOG_LEVEL` to `INFO`, `WARNING`, or `ERROR` to control console logs.
+
+5. **Logging**  
+   - The logger is configured at various levels throughout the project; typical usage is:
+     ```python
+     from file_structure_tool.utils.logger import get_logger
+     logger = get_logger(__name__)
+     ```
+   - Adjust the level in `file_structure_tool/utils/logger.py` or via the `FILE_STRUCTURE_LOG_LEVEL` environment variable.
+
+6. **Further Customization**  
+   - Add or remove top-level directories in `setup_initial_structure()` within `main.py` if you need a different default layout.
+   - For specialized reporting (e.g., HTML generation), create new scripts in `reports/` mirroring the style of `generate_reports.py`.
+

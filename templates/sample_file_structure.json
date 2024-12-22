@@ -1,0 +1,49 @@
+{
+    "f:/langchain_project": {
+        "files": [
+            { "name": "env.py" },
+            { "name": "toolkit.py" },
+            { "name": "workflow.py" },
+            { "name": "__init__.py" }
+        ],
+        "directories": {
+            "langchain": {
+                "files": [
+                    { "name": "load_env.py" }
+                ],
+                "directories": {}
+            },
+            "tests": {
+                "files": [
+                    { "name": "test_agents.py" },
+                    { "name": "test_managers.py" },
+                    { "name": "test_team.py" },
+                    { "name": "test_toolkit.py" },
+                    { "name": "test_tools.py" }
+                ],
+                "directories": {}
+            }
+        }
+    },
+    "f:/langchain": {
+        "files": [],
+        "directories": {
+            "langchain_": {
+                "files": [
+                    { "name": "toolkit.py" },
+                    { "name": "workflow.py" },
+                    { "name": "__init__.py" }
+                ],
+                "directories": {}
+            },
+            "langchain": {
+                "files": [
+                    { "name": "toolkit.py" },
+                    { "name": "workflow.py" },
+                    { "name": "__init__.py" }
+                ],
+                "directories": {}
+            }
+        }
+    }
+}
