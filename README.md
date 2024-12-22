@@ -50,7 +50,7 @@ file_structure_tool/
 │   └── generate_reports.py
 └── docs/
     └── report_of_files.md
-
+```
 ## Logging Configuration
 - Adjust logging levels in `file_structure_tool/utils/logger.py`.
 - Or set the environment variable `FILE_STRUCTURE_LOG_LEVEL` to `DEBUG`, `INFO`, `WARNING`, or `ERROR`:
