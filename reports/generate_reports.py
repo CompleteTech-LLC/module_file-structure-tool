@@ -1,5 +1,3 @@
-# file_structure_tool/reports/generate_reports.py
-
 """
 Generate File Reports
 ---------------------
@@ -30,7 +28,7 @@ NOTE:
 """
 
 import os
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 from file_structure_tool.tools.file_structure_tool import FileStructureTool
 from file_structure_tool.models.directory import Directory
@@ -72,14 +70,19 @@ def _collect_files_and_contents(path_prefix: str, directory: Directory) -> List[
 
     return results
 
-def generate_full_report(json_directory: str = "json_files") -> str:
+def generate_full_report(json_directory: Optional[str] = None) -> str:
     """
     Generate a comprehensive report of all files (including contents) in the
     current FileStructure.
 
     :param json_directory: Path where the 'file_structure.json' is stored.
+                           Defaults to an absolute path to the 'json_files' folder.
     :return: A Markdown-formatted string containing file paths and contents.
     """
+    if not json_directory:
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        json_directory = os.path.join(base_dir, "json_files")
+
     # Initialize the FileStructureTool
     tool = FileStructureTool(json_directory=json_directory)
 
@@ -116,9 +119,13 @@ def main():
     """
     CLI entry-point for generating a comprehensive file report.
     """
-    report = generate_full_report(json_directory="json_files")
+    # Define absolute path to the project’s root directory (optional override)
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    default_json_directory = os.path.join(base_dir, "json_files")
 
-    # Example: Print to stdout
+    report = generate_full_report(json_directory=default_json_directory)
+
+    # Print to stdout
     print(report)
 
     # Optionally, write to a file
