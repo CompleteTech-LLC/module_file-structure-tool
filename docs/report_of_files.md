@@ -2,31 +2,34 @@
 
 Below is an overview of the files in this project, organized by directory:
 
----
+# file_structure_tool/docs/report_of_files.md
+
+Below is an overview of the files in this project, organized by directory:
+
+```bash
 file_structure_tool/
-├── init.py
+├── __init__.py
 ├── main.py
 ├── models/
-│ ├── init.py
-│ ├── base.py
-│ ├── directory.py
-│ ├── file.py
-│ └── file_structure.py
+│   ├── __init__.py
+│   ├── base.py
+│   ├── directory.py
+│   ├── file.py
+│   └── file_structure.py
 ├── services/
-│ ├── init.py
-│ └── json_crud.py
+│   ├── __init__.py
+│   └── json_crud.py
 ├── tools/
-│ ├── init.py
-│ └── file_structure_tool.py
+│   ├── __init__.py
+│   └── file_structure_tool.py
 ├── utils/
-│ ├── init.py
-│ ├── decorators.py
-│ └── logger.py
+│   ├── __init__.py
+│   ├── decorators.py
+│   └── logger.py
 ├── reports/
-│ └── generate_reports.py
+│   └── generate_reports.py
 └── docs/
-└── report_of_files.md
----
+    └── report_of_files.md
 
 ### 1. `file_structure_tool/__init__.py`
 - **Purpose**: Initializes the `file_structure_tool` package and imports primary classes/functions for easier access.
