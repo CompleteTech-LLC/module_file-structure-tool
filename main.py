@@ -1,16 +1,19 @@
 # file_structure_tool/main.py
 
+import os
+
+from file_structure_tool.utils.logger import get_logger
+logger = get_logger(__name__)
+
 """
 Main Script to Demonstrate FileStructureTool Usage
 """
-import os
+
 from file_structure_tool.models.file import File
 from file_structure_tool.models.directory import Directory
 from file_structure_tool.models.file_structure import FileStructure
 from file_structure_tool.tools.file_structure_tool import FileStructureTool
-from file_structure_tool.utils.logger import get_logger
 
-logger = get_logger(__name__)
 
 def setup_initial_structure(tool: FileStructureTool):
     """
@@ -66,8 +69,10 @@ def setup_initial_structure(tool: FileStructureTool):
 
 
 def main():
-    # Define the directory where JSON files will be stored
-    json_directory = "json_files"
+    # Define absolute path to the project’s root directory
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    # Point to the "json_files" folder under the root directory
+    json_directory = os.path.join(base_dir, "json_files")
 
     # Initialize the FileStructureTool
     tool = FileStructureTool(json_directory=json_directory)
@@ -105,11 +110,11 @@ def main():
     if found_dir:
         logger.info(f"Found directory: {found_dir}")
 
-    # Example: Remove a directory using the correct method and parameters
+    # Example: Remove a directory
     try:
-        # This removes 'langchain' (subdirectory) from the parent path 'f:/langchain'
-        tool.delete_directory("f:/langchain", "langchain")
-        logger.info("Removed directory 'langchain' from 'f:/langchain'")
+        # Attempting to remove 'f:/langchain' as a top-level directory
+        tool.file_structure.remove_directory("f:/langchain")
+        logger.info("Removed top-level directory 'f:/langchain'.")
     except KeyError as ke:
         logger.error(ke)
 
