@@ -26,6 +26,7 @@ A Python-based utility for managing an in-memory filesystem structure, complete 
     python -m file_structure_tool.reports.generate_reports
 
 ## Directory Layout
+```bash
 file_structure_tool/
 ├── __init__.py
 ├── main.py
