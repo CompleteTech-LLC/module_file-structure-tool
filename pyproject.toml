@@ -17,7 +17,10 @@ authors = [
 ]
 dependencies = [
   "requests>=2.25.1",
-  "pydantic>=1.8.2"
+  "pydantic>=1.8.2",
+  "psycopg2-binary>=2.8",
+  "bcrypt>=3.2",
+  "sqlalchemy>=1.4
 ]
 
 [project.urls]
