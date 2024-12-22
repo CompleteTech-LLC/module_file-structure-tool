@@ -30,7 +30,7 @@ file_structure_tool/
 │   └── generate_reports.py
 └── docs/
     └── report_of_files.md
-
+```
 ### 1. `file_structure_tool/__init__.py`
 - **Purpose**: Initializes the `file_structure_tool` package and imports primary classes/functions for easier access.
 
