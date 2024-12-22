@@ -1,0 +1,25 @@
+# file: pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file_structure_tool"
+version = "0.1.0"
+description = "A Python-based utility for managing an in-memory filesystem structure"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["filesystem", "python", "json", "utilities"]
+license = "MIT"
+authors = [
+  {name="Your Name", email="your_email@example.com"}
+]
+dependencies = [
+  "requests>=2.25.1",
+  "pydantic>=1.8.2"
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/CompleteTech-LLCfile_structure_tool/issues"
+"Source Code" = "https://github.com/CompleteTech-LLC/file_structure_tool"
