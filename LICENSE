@@ -1,5 +1,6 @@
 MIT License
 
+<<<<<<< HEAD
 Copyright (c) 2024 CompleteTech LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,3 +22,46 @@ furnished to do so, subject to the following conditions:
    other dealings in the Software.
 
 Timothy Gregg, on behalf of CompleteTech LLC
+=======
+Copyright (c) 2024 Timothy Gregg (CompleteTech LLC)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+1. **License and Copyright Notice**  
+   The above copyright notice and this permission notice shall be included
+   in all copies or substantial portions of the Software.
+
+2. **Limitations**  
+   The Software may be used solely in compliance with local, state, and federal
+   laws. Modification or misuse of this Software in ways not permitted by law
+   is strictly prohibited.
+
+3. **Liability**  
+   In no event and under no legal theory, whether in tort (including negligence), 
+   contract, or otherwise, unless required by applicable law (such as deliberate 
+   and grossly negligent acts) or agreed to in writing, shall any contributor be 
+   liable for damages, including any direct, indirect, special, incidental, or 
+   consequential damages of any character arising as a result of this License or 
+   the use of the Software, even if advised of the possibility of such damages.
+
+4. **Warranty**  
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+   THE SOFTWARE.
+
+5. **Conditions**  
+   Use of the Software shall constitute acceptance of the terms of this License
+   and agreement to be bound by its provisions. Any distribution of the Software 
+   or derivative works must comply with the conditions stated herein.
+
+---
+>>>>>>> a40c240babfc292d085fb4fff96199a339233a58
