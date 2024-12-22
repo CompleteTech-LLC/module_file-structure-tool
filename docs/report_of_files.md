@@ -1,7 +1,7 @@
 # file_structure_tool/docs/report_of_files.md
 
 Below is an overview of the files in this project, organized by directory:
-
+bash'''
 file_structure_tool/
 ├── init.py
 ├── main.py
